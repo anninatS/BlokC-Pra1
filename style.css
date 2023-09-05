@@ -1,0 +1,46 @@
+/*
+Chat logs from chat.openai.com used to create the slides:
+    https://chat.openai.com/share/7d422151-0ce7-4ec5-8d0c-8f69e89822df
+*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.slide-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    overflow: hidden;
+    scroll-snap-type: y mandatory;
+}
+
+.slide {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    width: 100%;
+    min-height: 100vh; /* Minimum height to accommodate content */
+    scroll-snap-align: start;
+}
+
+.navigation {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.navigation button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
