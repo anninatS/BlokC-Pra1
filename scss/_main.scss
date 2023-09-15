@@ -1,0 +1,148 @@
+main {
+    border: 1px solid $black;
+    border-radius: 30px;
+    background-image: url("../img/bg.svg");
+    height: 100%;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding-bottom: 20px;
+    flex: 1;
+
+    .content {
+        margin: 25px;
+        background-color: $white;
+        border: 5px solid $blue;
+        border-radius: 25px;
+
+        h2 {
+            text-align: center;
+            margin: 25px;
+            font-family: $fancy-font;
+            font-size: 32px;
+            color: $black;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 25px;
+            width: 50%;
+            border-radius: 25px;
+        }
+
+        p {
+            margin: 25px 50px;
+            font-family: $font;
+            font-size: 1.5em;
+            color: $black;
+            line-height: 32px;
+
+            a {
+                position: relative;
+                color: $blue;
+                text-decoration: none;
+                font-weight: bold;
+
+                .tooltip {
+                    text-align: center;
+                    visibility: hidden;
+                    position: absolute;
+                    color: $white;
+                    background-color: $black;
+                    border-radius: 6px;
+                    padding: 5px;
+                    width: 100%;
+                    font-size: 16px;
+                    position: absolute;
+                    bottom: 120%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    opacity: 0;
+                    transition: opacity 250ms;
+                }
+
+                &:hover {
+                    color: $red;
+
+                    .tooltip {
+                        visibility: visible;
+                        transition: opacity 250ms;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    table {
+        text-align: center;
+        font-size: 0.75em;
+        margin: 25px auto;
+        border-collapse: collapse;
+        border: 5px solid $blue;
+        border-radius: 25px;
+
+        th {
+            background-color: $blue;
+            color: $white;
+            font-family: $fancy-font;
+            font-size: 24px;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid $blue;
+            padding: 10px;
+            font-family: $font;
+            font-size: 1.5em;
+            color: $black;
+        }
+    }
+
+    // <div class="teacher">
+    //                 <h3 class="display-name">Stan Rochat</h3>
+    //                 <p class="subject">Webdesign</p>
+    //                 <img src="img/teachers/stan.jpg" alt="Stan Rochat" />
+    //             </div>
+
+    // create pretty teacher cards
+    .teacher {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 25px;
+        padding: 25px;
+        background-color: $white;
+        border: 5px solid $blue;
+        border-radius: 25px;
+
+        .display-name {
+            font-family: $fancy-font;
+            font-size: 32px;
+            color: $black;
+        }
+
+        .subject {
+            font-family: $font;
+            font-size: 1.5em;
+            color: $black;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 25%;
+            border-radius: 25px;
+        }
+    }
+}
+
+@keyframes jump {
+    0%,
+    100% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

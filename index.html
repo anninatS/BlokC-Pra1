@@ -1,37 +1,66 @@
-<!--
-Chat logs from chat.openai.com used to create the slides:
-    https://chat.openai.com/share/7d422151-0ce7-4ec5-8d0c-8f69e89822df
--->
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vertical Slide PowerPoint</title>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="script.js" defer></script>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <div class="slide-container" id="slideContainer">
-            <!-- Default Slides -->
-            <div class="slide">Slide 1</div>
-            <div class="slide">Slide 2</div>
-            <div class="slide">Slide 3</div>
-            <div class="slide">Slide 4</div>
-            <div class="slide">Slide 5</div>
-            <div class="slide">Slide 6</div>
-            <div class="slide">Slide 7</div>
-            <div class="slide">Slide 8</div>
-            <div class="slide">Slide 9</div>
-            <div class="slide">Slide 10</div>
-            <!-- Slides will be added dynamically here -->
-        </div>
+        <title>I Love Micro:Bit</title>
 
-        <div class="navigation">
-            <button id="prevButton" disabled>&#8593; Prev</button>
-            <button id="nextButton" disabled>Next &#8595;</button>
-        </div>
+        <!-- Favicon -->
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+        <!-- Css link -->
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <!-- Javascript -->
+        <script src="js/script.js" defer></script>
+
+        <!-- Font links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Silkscreen&family=Ubuntu:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <header class="flex-center">
+            <a href="https://curio.nl" target="_blank">
+                <img class="logo" src="img/curio.png" alt="curio logo" />
+            </a>
+            <nav class="flex-center">
+                <a class="nav-item" href="index.html">Home</a>
+                <a class="nav-item" href="vakken.html">Vakken</a>
+                <a class="nav-item" href="rooster.html">Rooster</a>
+                <a class="nav-item" href="teacher.html">Leeraren</a>
+            </nav>
+            <div></div>
+        </header>
+        <main>
+            <div class="content">
+                <h2>Waar is deze site voor<span class="red-accent">?</span></h2>
+                <p>
+                    Welkom bij de spannende wereld van softwareontwikkeling! Ben je
+                    geïnteresseerd in het creëren van de digitale toekomst en wil je
+                    ontdekken hoe je jouw passie voor technologie kunt omzetten in een
+                    veelbelovende carrière? Dan ben je hier op de juiste plek!
+                </p>
+                <img id="gebouw" src="img/gebouw.jpg" alt="Curio gebouw" />
+            </div>
+        </main>
+        <footer>
+            <p class="creator">
+                Made with&nbsp;<img
+                    src="img/heart.svg"
+                    class="love"
+                    alt="love"
+                />&nbsp;by 'Stan Rochat' 2023<span class="red-accent"
+                    >&nbsp;&copy;</span
+                >
+            </p>
+        </footer>
     </body>
 </html>

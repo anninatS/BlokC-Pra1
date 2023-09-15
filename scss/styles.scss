@@ -1,0 +1,49 @@
+@import "reset";
+@import "variables";
+@import "misc";
+@import "header";
+@import "main";
+@import "footer";
+@import "image-viewer";
+
+pre {
+    font-family: $code-font;
+    font-size: 16px;
+    line-height: 1.5em;
+    background-color: $black;
+    color: $white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    overflow-x: scroll;
+
+    .number {
+        color: $red;
+    }
+}
+
+code {
+    font-family: $code-font;
+    background-color: $black;
+    font-size: 20px;
+    padding: 2px 4px;
+    margin: 2px;
+    border-radius: 5px;
+    overflow-x: scroll;
+
+    .red {
+        color: $red;
+    }
+
+    .teal {
+        color: $teal;
+    }
+
+    .blue {
+        color: $blue;
+    }
+
+    .white {
+        color: $white;
+    }
+}

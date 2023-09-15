@@ -1,0 +1,110 @@
+$image-size-big: 500px;
+$image-size-med: 400px;
+$image-size-small: 300px;
+.images {
+    width: calc($image-size-big + 32px * 8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px auto;
+
+    .image-plot {
+        width: $image-size-big;
+        height: calc($image-size-big + 32px * 2);
+        border: 5px solid $blue;
+        border-radius: 35px;
+        display: flex;
+        overflow: hidden;
+        pointer-events: none;
+        background-color: $white;
+
+        .image {
+            img {
+                width: $image-size-big;
+                height: $image-size-big;
+                border-radius: 25px;
+            }
+
+            p {
+                font-family: $fancy-font;
+                font-size: 2em;
+                color: $black;
+                text-align: center;
+                background-color: $white;
+                margin: 10px 0 -23px 0;
+            }
+        }
+    }
+
+    .arrow-key {
+        background-color: $teal;
+        border-radius: 15px;
+        margin: auto 25px;
+        padding: 17px;
+        border: 1px solid $black;
+
+        img {
+            translate: -5px;
+        }
+
+        &.right {
+            transform: scaleX(-1);
+        }
+    }
+}
+
+@media (max-width: 910px) {
+    .images {
+        width: calc($image-size-med + 32px * 8);
+
+        .image-plot {
+            width: $image-size-med;
+            height: calc($image-size-med + 32px * 2);
+
+            .image img {
+                width: $image-size-med;
+                height: $image-size-med;
+            }
+        }
+
+        .arrow-key {
+            padding: 10px;
+            margin: auto 15px;
+            border-radius: 10px;
+
+            img {
+                translate: -2.5px;
+                width: 22px;
+                height: 22px;
+            }
+        }
+    }
+}
+
+@media (max-width: 740px) {
+    .images {
+        width: calc($image-size-small + 32px * 8);
+
+        .image-plot {
+            width: $image-size-small;
+            height: calc($image-size-small + 32px * 2);
+
+            .image img {
+                width: $image-size-small;
+                height: $image-size-small;
+            }
+        }
+
+        .arrow-key {
+            padding: 5px;
+            margin: auto 10px;
+            border-radius: 5px;
+
+            img {
+                translate: -1px;
+                width: 17px;
+                height: 17px;
+            }
+        }
+    }
+}

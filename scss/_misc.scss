@@ -1,0 +1,19 @@
+.flex-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.red-accent {
+    color: $red;
+}
+
+body {
+    background-color: $black;
+    font-family: $font;
+    color: $font-black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
