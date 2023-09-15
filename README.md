@@ -1,13 +1,13 @@
 # Site voor opendag
 
-Ik heb deze website gemaakt voor de opendag van het [Curio](https://curio.nl) in Breda. De website is gemaakt om te laten zien wat je allemaal kan doen met de opleidingen van Curio. De website is gemaakt met HTML/CSS/JS en is dus makkelijk aan te passen naar je eigen wensen.
+Ik heb deze website gemaakt voor de opendag van het [Curio](https://curio.nl) in Breda. De website is gemaakt om te laten zien wat je allemaal kan doen met de opleidingen van Curio. De website is gemaakt met HTML/CSS/JS en is dus makkelijk aan te passen naar je eigen wensen. Je kunt de website [hier](<https://info.curio.codes>) bekijken en andere sites die gemaakt zijn door leerlingen van Software Developer opleiding van Curio.
 
 ## Installatie
 
 1. Installeer een webserver (bijv. Apache)
 2. Start de webserver
 3. Plaats de bestanden in de webserver root directory (bijv. /var/www/html)
-4. Open de website in de browser (bijv. <http://localhost>)
+4. Open de website in de browser (bijv. <http://localhost:8080>)
 5. Klaar! Genieten maar!
 
 ## Aanpassen
